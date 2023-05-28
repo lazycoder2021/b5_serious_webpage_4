@@ -1,0 +1,660 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+    background-color: black !important;
+    color: white !important;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5)!important;
+}
+
+.nav-item a{
+    color:white!important; 
+    text-transform:uppercase!important;
+    padding:15px 15px!important; 
+}
+
+.banner-container{
+    padding:0px!important;
+    height:100vh;
+}
+
+.carousel-inner{
+    height:100%!important;
+    //border:1px solid red;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+
+    .carousel-caption h5 {
+        font-size: 90px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 25px;
+        color:white!important;
+        font-weight:800;
+        font-style:italic;
+    }
+
+    .carousel-caption p {
+        width: 60%;
+        margin: 0px auto 10px;
+        font-size: 18px;
+        line-height: 1.9;
+        font-size: 22px;
+    }
+
+    .carousel-caption a{
+        padding:9px 26px!important;
+        //display:block;
+        margin-top:10px;
+        letter-spacing:1.2px;
+    }
+
+
+
+.carousel-inner::before {
+    content: '' !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    //background: rgba(0,0,0,0.3) !important;
+    z-index: 1 !important;
+    position: absolute;
+}
+
+.w-100 {
+    height: 100vh;
+    object-fit:cover;
+}
+
+
+.features-container-wrapper{
+    padding:100px 0px 30px!important;
+}
+
+.underline {
+    height: 3px;
+    width: 30px;
+    background: #BB2D3B; 
+    margin:20px auto 20px;
+}
+
+.features-container-wrapper-row1{
+    margin-bottom:70px;
+}
+
+.features-container-wrapper-row1 h1{
+    font-size:45px; 
+    font-weight:800; 
+}
+
+    .features-container-wrapper-row1 p {
+        font-size: 15px;
+    }
+
+
+.features-container-wrapper-row2{
+    padding:0px 30px;
+}
+
+    .features-container-wrapper-row2 h4 {
+        color: #D01919;
+        font-weight:800;
+    }
+
+    .features-container-wrapper-row2 p {
+        margin-top:20px;
+    }
+
+.icon {
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #373739;
+    color: white;
+    transform:translateY(-40px);
+}
+
+    .icon i{
+        font-size:28px;
+    }
+
+.workouts-container {
+    height: 75vh;
+    //border:2px solid red;
+    margin-top: 70px;
+    
+    //position: relative;
+}
+
+.workout-wrapper {
+    border: 0px solid black !important;
+    width: 100%;
+    padding: 0px !important;
+    margin: 0px !important;
+    
+}
+
+    .workout-wrapper img {
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+    }
+
+    .workout-wrapper img:hover{
+        opacity:1;
+        cursor:pointer; 
+    }
+
+    .workout-wrapper h2{
+        //position:absolute;
+        color:#373739;
+        font-weight:800;
+        z-index:1000;
+        margin:20px auto;
+    }
+
+.workout-wrapper a {
+    padding: 9px 26px !important;
+    //border:1px solid black!important;
+    margin-top: 100px;
+    letter-spacing: 1.2px;
+    display:block!important;
+    margin:auto!important; 
+}
+
+.workouts-wrapper{
+    padding:0px!important;
+    margin:0px!important;
+    border:0px solid blue;
+}
+
+.workout-wrapper{
+    border:0px solid orange!important;
+}
+
+.workouts-container {
+    //padding: 0px !important;
+    margin-bottom:70px;
+    padding:0px 130px!important;
+}
+
+
+.coaches-container-inner h1{
+    font-size:45px;
+    color:#212529;
+    font-weight:800; 
+    //margin-bottom:50px;
+}
+
+.spl{
+    margin-bottom:50px;
+}
+
+.coaches-container-inner {
+    padding: 0px 30px !important;
+}
+
+.coaches-container-wrapper h4{
+    font-size:22px;
+    font-weight:800;
+    margin:15px auto!important;
+}
+
+.coaches-container-wrapper h4 span {
+    font-size: 15px;
+    font-weight: 100;
+    color:#d01919;
+}
+
+    .coaches-container-wrapper p {
+        font-size:15px;
+        color:#939393;
+    }
+
+.coach-card{
+    border:none!important;
+}
+
+    .coach-card:hover .coach-social-media-links {
+        opacity: 1;
+    }
+
+    .coach-card:hover .coach-img {
+        opacity: 0.8;
+    }
+
+.coach-img::before{
+    position:absolute;
+    content:'';
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%; 
+    //border:1px solid black; 
+}
+
+.coach-social-media-links {
+    position: absolute;
+    top: 205px;
+    left: 50px;
+    opacity: 0;
+    display:flex;
+    //border:1px solid black;
+    width:200px;
+    justify-content:space-around;
+}
+
+.coach-social-media-link {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #262627;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-media-links {
+    position: absolute;
+    top: 100px;
+    left: 120px;
+    //opacity: 0;
+    display: flex;
+    //border:1px solid black;
+    width: 200px;
+    justify-content: space-around;
+}
+
+.footer-social-media-link {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #262627;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //border:1px solid white;
+}
+
+
+
+.testimonial-container {
+    margin-top:60px;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(images/background-04.jpg);
+    //background: rgba(0, 0, 0, 0.65);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment:fixed; 
+}
+
+.testimonial-inner-container {
+    //border: 1px solid white;
+    padding:50px 220px!important;
+    height:100%; 
+}
+
+.testimonial-wrapper {
+    //justify-content:space-around;
+    //border:1px solid white;
+    height:100%; 
+}
+
+.testimonial-wrapper-card{
+    height:100%; 
+    //display:flex;
+    //flex-direction:column; 
+    //justify-content:space-between;
+    //align-items:center;
+}
+
+.testimonial-quote-icon {
+    color:#ffcc2e;
+    font-size:52px!important;
+    display:block;
+    margin:15px;
+}
+
+.customer-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.customer-image img{
+    width:100%; 
+    height:100%; 
+    border-radius:50%; 
+    
+}
+
+.testimonial-wrapper-card p{
+    margin:30px auto!important; 
+}
+
+.clientname{
+    font-size:15px;
+    color:white; 
+}
+
+.clientdesg{
+    font-size:15px;
+}
+
+.makeitwhite{
+    
+    height: 3px;
+    width: 30px;
+    background: white; 
+    margin:20px auto 20px;
+
+}
+
+.footer{
+    height:50vh;
+    background:black;
+    position:relative;
+    color:white; 
+    padding:50px 0px!important; 
+}
+
+.footer-wrapper{
+    padding:0px 120px!important;
+    //margin-top:30px;
+}
+
+.gallery-image-container {
+    
+}
+
+.gallery-image {
+    padding:0px !important;
+    margin: 0px !important;
+}
+
+.gallery-image img{
+    height:100%; 
+    width:100%; 
+}
+
+.footer-card{
+    //border:1px solid white; 
+}
+
+.footer-items{
+    //border:1px solid white; 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+.footer-items input{
+    width:180px;
+}
+
+    .footer-items i {
+        font-size:28px;
+    }
+
+    .footer-items button{
+        color:white; 
+        background:#d01919;
+    }
+
+
+
+@media only screen and (max-width:480px) {
+    .navbar-toggler .navbar-toggler-icon {
+        background-color: white !important;
+    }
+
+    .navbar-nav {
+        margin-top: 15px;
+    }
+
+    .nav-item a {
+        padding: 5px 5px !important;
+    }
+
+    .banner-container {
+        //border: 3px solid red;
+        //width:480px;
+    }
+
+    .carousel-inner {
+        width: 100%;
+    }
+
+
+    .carousel-item {
+        height: 100vh;
+        min-height: 300px;
+        width: 100%;
+    }
+
+    .carousel-caption {
+        bottom: 150px;
+        z-index: 2;
+        //border:2px solid red;
+        height: 300px;
+        width: 100%;
+        left: 0px;
+    }
+
+        .carousel-caption h5 {
+            font-size: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 25px;
+            color: white !important;
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        .carousel-caption p {
+            width: 60%;
+            margin: 0px auto 10px;
+            font-size: 18px;
+            line-height: 1.9;
+            font-size: 16px;
+        }
+
+    .carousel-inner::before {
+        content: '' !important;
+        width: 100% !important;
+        height: 100% !important;
+        top: 0 !important;
+        left: 0 !important;
+        background: rgba(0,0,0,0.3) !important;
+        z-index: 1 !important;
+        position: absolute;
+    }
+
+    .card-wrapper {
+        //border:1px solid red;
+        margin-bottom: 50px;
+    }
+
+    .icon {
+        border: 1px solid black;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin: 0px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #373739;
+        color: white;
+        transform: translateY(-40px);
+    }
+
+    .workouts-container {
+        //border:2px solid red;
+        width: 400px !important;
+        margin: 0px auto !important;
+    }
+
+    .workout-wrapper {
+        border: 0px solid black !important;
+        width: 400px !important;
+        padding: 0px !important;
+        margin: 0px auto !important;
+    }
+
+        .workout-wrapper img {
+            width: 100% !important;
+            height: 100% !important;
+            opacity: 0.7 !important;
+        }
+
+            .workout-wrapper img:hover {
+                opacity: 1 !important;
+                cursor: pointer;
+            }
+
+        .workout-wrapper h2 {
+            //position:absolute;
+            color: #373739;
+            font-weight: 800;
+            z-index: 1000;
+            margin-top: 20px;
+        }
+
+        .workout-wrapper a {
+            padding: 9px 26px !important;
+            //border:1px solid black !important;
+            margin-top: 100px;
+            letter-spacing: 1.2px;
+            display: block !important;
+            margin: auto !important;
+        }
+
+    .workouts-wrapper {
+        padding: 0px !important;
+        margin: 0px !important;
+        border: 0px solid blue;
+        width: 480px !important;
+    }
+
+    .workout-wrapper {
+        border: 0px solid orange !important;
+        width: 100%;
+        height: 100%;
+        padding: 0px !important;
+    }
+
+    .workouts-container {
+        height: 125vh;
+        margin-bottom: 100px;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .coach-social-media-links {
+        position: absolute;
+        top: 205px;
+        left: 100px;
+        opacity: 0;
+        display: flex;
+        //border:1px solid black;
+        width: 200px;
+        justify-content: space-around;
+    }
+
+    .testimonial-container {
+        //border:1px solid white;
+        width: 480px;
+        padding: 0px !important;
+        height: 115vh;
+    }
+
+    .testimonial-inner-container {
+        //border: 1px solid red;
+        width: 100%;
+        padding: 0px !important;
+        height: 100%;
+    }
+
+        .testimonial-inner-container h1 {
+            padding-top: 30px;
+        }
+
+        .testimonial-inner-container h5 {
+        }
+
+    .testimonial-wrapper {
+        //border: 20px solid orange;
+        height: 100%;
+        width: 100%;
+    }
+
+    .testimonial-wrapper-card p {
+        padding: 10px 30px;
+    }
+
+    .footer {
+        height: 225vh;
+        background: black;
+        position: relative;
+        color: white;
+        padding: 50px 0px !important;
+        width: 480px;
+    }
+
+
+    .footer-wrapper {
+        flex-direction: column;
+        width: 480px;
+        //border:3px solid red;
+        grid-gap: 30px;
+    }
+
+    .footer-card {
+        //border:2px solid white;
+        width: 100%;
+    }
+
+    .fx {
+        display: none;
+    }
+
+    .f101 {
+        margin-top: 60px;
+    }
+
+    .f1 {
+        width: 100%;
+        //border:1px solid white;
+    }
+}
+
+    
+
+
+
+
+
